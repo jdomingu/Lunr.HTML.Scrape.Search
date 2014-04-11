@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Documentation Portal</title>
+        <script src="lunr.min.js"></script>
+        <script src="index.js"></script>
+        <script src="search.js"></script>
+
+    </head>
+    <body>
+        <div id="contentBodyInner" style="padding-left:15px;">
+            <br><br>
+            <form action="javascript:the_search(document.getElementById('lunr-search').value);">
+                <input id="lunr-search" class="field" type="text" placeholder="Search">
+                <input type="submit" value="Search">
+            </form>
+            
+            <div id="searchResults">
+            </div>
+		</div>
+    </body>
+</html>
